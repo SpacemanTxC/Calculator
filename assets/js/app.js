@@ -36,7 +36,27 @@
 
 //Example 2
 //NPM package that can prompt question in terminal
+// const prompt = require('prompt-sync')();
+//
+// const name = prompt('What is your name?');
+// console.log(`Hey there ${name}`);
+
+// Example 3 numbers
 const prompt = require('prompt-sync')();
 
-const name = prompt('What is your name?');
-console.log(`Hey there ${name}`);
+const num1 = prompt('Enter a number: ');
+const num2 = prompt('Enter a second number: ');
+//convert to int from  string
+function add(x, y){
+  let number1 = parseInt(x);
+  let number2 = parseInt(y);
+// value
+  return number1 + number2;
+
+};
+//call and then show sum
+console.log(add(num1, num2));
+
+
+
+// Need to prompt what the user whats to do add, sub, mult, div 
